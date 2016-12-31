@@ -1,0 +1,280 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: ip-generate --project-directory=C:/Users/Alec/Documents/GitHub/Home-Security/DE2/ --output-directory=C:/Users/Alec/Documents/GitHub/Home-Security/DE2/top_level/ --report-file=bsf:C:/Users/Alec/Documents/GitHub/Home-Security/DE2/top_level.bsf --system-info=DEVICE_FAMILY="Cyclone II" --system-info=DEVICE=EP2C35F672C6 --system-info=DEVICE_SPEEDGRADE=6 --component-file=C:/Users/Alec/Documents/GitHub/Home-Security/DE2/top_level.qsys
+Progress: Loading DE2/top_level.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 13.0]
+Progress: Parameterizing module clk_0
+Progress: Adding nios2_qsys_0 [altera_nios2_qsys 13.0]
+Progress: Parameterizing module nios2_qsys_0
+Progress: Adding jtag_uart_0 [altera_avalon_jtag_uart 13.0.1.99.2]
+Progress: Parameterizing module jtag_uart_0
+Progress: Adding clocks [altera_up_clocks 13.0]
+Progress: Parameterizing module clocks
+Progress: Adding SDRAM [altera_avalon_new_sdram_controller 13.0.1.99.2]
+Progress: Parameterizing module SDRAM
+Progress: Adding audio_and_video_config_0 [altera_up_avalon_audio_and_video_config 13.0]
+Progress: Parameterizing module audio_and_video_config_0
+Progress: Adding video_decoder_0 [altera_up_avalon_video_decoder 13.0]
+Progress: Parameterizing module video_decoder_0
+Progress: Adding Chroma_Resampler [altera_up_avalon_video_chroma_resampler 13.0]
+Progress: Parameterizing module Chroma_Resampler
+Progress: Adding Colour_Space_Converter [altera_up_avalon_video_csc 13.0]
+Progress: Parameterizing module Colour_Space_Converter
+Progress: Adding RGB_Resampler [altera_up_avalon_video_rgb_resampler 13.0]
+Progress: Parameterizing module RGB_Resampler
+Progress: Adding Video_Clipper [altera_up_avalon_video_clipper 13.0]
+Progress: Parameterizing module Video_Clipper
+Progress: Adding Video_Scaler [altera_up_avalon_video_scaler 13.0]
+Progress: Parameterizing module Video_Scaler
+Progress: Adding DMA_Controller [altera_up_avalon_video_dma_controller 13.0]
+Progress: Parameterizing module DMA_Controller
+Progress: Adding Pixel_Buffer [altera_up_avalon_sram 13.0]
+Progress: Parameterizing module Pixel_Buffer
+Progress: Adding video_pixel_buffer_dma_0 [altera_up_avalon_video_pixel_buffer_dma 13.0]
+Progress: Parameterizing module video_pixel_buffer_dma_0
+Progress: Adding RGB_Resampler_0 [altera_up_avalon_video_rgb_resampler 13.0]
+Progress: Parameterizing module RGB_Resampler_0
+Progress: Adding Pixel_Scaler [altera_up_avalon_video_scaler 13.0]
+Progress: Parameterizing module Pixel_Scaler
+Progress: Adding Dual_Clock_FIFO [altera_up_avalon_video_dual_clock_buffer 13.0]
+Progress: Parameterizing module Dual_Clock_FIFO
+Progress: Adding VGA_Controller [altera_up_avalon_video_vga_controller 13.0]
+Progress: Parameterizing module VGA_Controller
+Progress: Adding Frame_Save_DMA [altera_avalon_dma 13.0.1.99.2]
+Progress: Parameterizing module Frame_Save_DMA
+Progress: Adding Button_3 [altera_avalon_pio 13.0.1.99.2]
+Progress: Parameterizing module Button_3
+Progress: Adding p_data [altera_avalon_pio 13.0.1.99.2]
+Progress: Parameterizing module p_data
+Progress: Adding p_input [altera_avalon_pio 13.0.1.99.2]
+Progress: Parameterizing module p_input
+Progress: Adding p_signal [altera_avalon_pio 13.0.1.99.2]
+Progress: Parameterizing module p_signal
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: top_level.video_decoder_0: Video In Stream: Format: 720 x 244 (Odd Frames) or 720 x 243 (Even Frames) with Colour: 8 (bits) x 2 (planes) (YCrCb 4:2:2)
+Info: top_level.Chroma_Resampler: Chroma Resampling: 8 (bits) x 2 (planes) -> 8 (bits) x 3 (planes)
+Info: top_level.Colour_Space_Converter: Colour Space Conversion: 8 (bits) x 3 (planes) (444 YCrCb) -> 8 (bits) x 3 (planes) (24-bit RGB)
+Info: top_level.RGB_Resampler: RGB Resampling: 8 (bits) x 3 (planes) -> 16 (bits) x 1 (planes)
+Info: top_level.Video_Clipper: Change in Resolution: 720 x 244 -> 640 x 240
+Info: top_level.Video_Scaler: Change in Resolution: 640 x 240 -> 320 x 240
+Info: top_level.RGB_Resampler_0: RGB Resampling: 16 (bits) x 1 (planes) -> 10 (bits) x 3 (planes)
+Info: top_level.Pixel_Scaler: Change in Resolution: 320 x 240 -> 640 x 480
+Info: top_level.VGA_Controller: Video Output Stream: Format: 640 x 480 with Color: 10 (bits) x 3 (planes)
+Info: top_level.Button_3: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: top_level.p_input: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: ip-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: ip-generate --project-directory=C:/Users/Alec/Documents/GitHub/Home-Security/DE2/ --output-directory=C:/Users/Alec/Documents/GitHub/Home-Security/DE2/top_level/synthesis/ --file-set=QUARTUS_SYNTH --report-file=sopcinfo:C:/Users/Alec/Documents/GitHub/Home-Security/DE2/top_level.sopcinfo --report-file=html:C:/Users/Alec/Documents/GitHub/Home-Security/DE2/top_level.html --report-file=qip:C:/Users/Alec/Documents/GitHub/Home-Security/DE2/top_level/synthesis/top_level.qip --report-file=cmp:C:/Users/Alec/Documents/GitHub/Home-Security/DE2/top_level.cmp --report-file=svd --system-info=DEVICE_FAMILY="Cyclone II" --system-info=DEVICE=EP2C35F672C6 --system-info=DEVICE_SPEEDGRADE=6 --component-file=C:/Users/Alec/Documents/GitHub/Home-Security/DE2/top_level.qsys --language=VERILOG
+Progress: Loading DE2/top_level.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 13.0]
+Progress: Parameterizing module clk_0
+Progress: Adding nios2_qsys_0 [altera_nios2_qsys 13.0]
+Progress: Parameterizing module nios2_qsys_0
+Progress: Adding jtag_uart_0 [altera_avalon_jtag_uart 13.0.1.99.2]
+Progress: Parameterizing module jtag_uart_0
+Progress: Adding clocks [altera_up_clocks 13.0]
+Progress: Parameterizing module clocks
+Progress: Adding SDRAM [altera_avalon_new_sdram_controller 13.0.1.99.2]
+Progress: Parameterizing module SDRAM
+Progress: Adding audio_and_video_config_0 [altera_up_avalon_audio_and_video_config 13.0]
+Progress: Parameterizing module audio_and_video_config_0
+Progress: Adding video_decoder_0 [altera_up_avalon_video_decoder 13.0]
+Progress: Parameterizing module video_decoder_0
+Progress: Adding Chroma_Resampler [altera_up_avalon_video_chroma_resampler 13.0]
+Progress: Parameterizing module Chroma_Resampler
+Progress: Adding Colour_Space_Converter [altera_up_avalon_video_csc 13.0]
+Progress: Parameterizing module Colour_Space_Converter
+Progress: Adding RGB_Resampler [altera_up_avalon_video_rgb_resampler 13.0]
+Progress: Parameterizing module RGB_Resampler
+Progress: Adding Video_Clipper [altera_up_avalon_video_clipper 13.0]
+Progress: Parameterizing module Video_Clipper
+Progress: Adding Video_Scaler [altera_up_avalon_video_scaler 13.0]
+Progress: Parameterizing module Video_Scaler
+Progress: Adding DMA_Controller [altera_up_avalon_video_dma_controller 13.0]
+Progress: Parameterizing module DMA_Controller
+Progress: Adding Pixel_Buffer [altera_up_avalon_sram 13.0]
+Progress: Parameterizing module Pixel_Buffer
+Progress: Adding video_pixel_buffer_dma_0 [altera_up_avalon_video_pixel_buffer_dma 13.0]
+Progress: Parameterizing module video_pixel_buffer_dma_0
+Progress: Adding RGB_Resampler_0 [altera_up_avalon_video_rgb_resampler 13.0]
+Progress: Parameterizing module RGB_Resampler_0
+Progress: Adding Pixel_Scaler [altera_up_avalon_video_scaler 13.0]
+Progress: Parameterizing module Pixel_Scaler
+Progress: Adding Dual_Clock_FIFO [altera_up_avalon_video_dual_clock_buffer 13.0]
+Progress: Parameterizing module Dual_Clock_FIFO
+Progress: Adding VGA_Controller [altera_up_avalon_video_vga_controller 13.0]
+Progress: Parameterizing module VGA_Controller
+Progress: Adding Frame_Save_DMA [altera_avalon_dma 13.0.1.99.2]
+Progress: Parameterizing module Frame_Save_DMA
+Progress: Adding Button_3 [altera_avalon_pio 13.0.1.99.2]
+Progress: Parameterizing module Button_3
+Progress: Adding p_data [altera_avalon_pio 13.0.1.99.2]
+Progress: Parameterizing module p_data
+Progress: Adding p_input [altera_avalon_pio 13.0.1.99.2]
+Progress: Parameterizing module p_input
+Progress: Adding p_signal [altera_avalon_pio 13.0.1.99.2]
+Progress: Parameterizing module p_signal
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: top_level.video_decoder_0: Video In Stream: Format: 720 x 244 (Odd Frames) or 720 x 243 (Even Frames) with Colour: 8 (bits) x 2 (planes) (YCrCb 4:2:2)
+Info: top_level.Chroma_Resampler: Chroma Resampling: 8 (bits) x 2 (planes) -> 8 (bits) x 3 (planes)
+Info: top_level.Colour_Space_Converter: Colour Space Conversion: 8 (bits) x 3 (planes) (444 YCrCb) -> 8 (bits) x 3 (planes) (24-bit RGB)
+Info: top_level.RGB_Resampler: RGB Resampling: 8 (bits) x 3 (planes) -> 16 (bits) x 1 (planes)
+Info: top_level.Video_Clipper: Change in Resolution: 720 x 244 -> 640 x 240
+Info: top_level.Video_Scaler: Change in Resolution: 640 x 240 -> 320 x 240
+Info: top_level.RGB_Resampler_0: RGB Resampling: 16 (bits) x 1 (planes) -> 10 (bits) x 3 (planes)
+Info: top_level.Pixel_Scaler: Change in Resolution: 320 x 240 -> 640 x 480
+Info: top_level.VGA_Controller: Video Output Stream: Format: 640 x 480 with Color: 10 (bits) x 3 (planes)
+Info: top_level.Button_3: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: top_level.p_input: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: top_level: Generating top_level "top_level" for QUARTUS_SYNTH
+Info: pipeline_bridge_swap_transform: After transform: 24 modules, 102 connections
+Info: No custom instruction connections, skipping transform 
+Info: merlin_translator_transform: After transform: 42 modules, 174 connections
+Info: merlin_domain_transform: After transform: 75 modules, 398 connections
+Info: merlin_router_transform: After transform: 93 modules, 470 connections
+Info: merlin_traffic_limiter_transform: After transform: 95 modules, 480 connections
+Info: merlin_burst_transform: After transform: 97 modules, 488 connections
+Info: reset_adaptation_transform: After transform: 100 modules, 383 connections
+Info: merlin_network_to_switch_transform: After transform: 135 modules, 455 connections
+Info: merlin_width_transform: After transform: 141 modules, 473 connections
+Info: limiter_update_transform: After transform: 141 modules, 475 connections
+Info: merlin_mm_transform: After transform: 141 modules, 475 connections
+Info: merlin_interrupt_mapper_transform: After transform: 142 modules, 478 connections
+Info: nios2_qsys_0: Starting RTL generation for module 'top_level_nios2_qsys_0'
+Info: nios2_qsys_0:   Generation command is [exec C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2/eperl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2/cpu_lib -I C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2/nios_lib -I C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2 -I C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2 -- C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2/generate_rtl.epl --name=top_level_nios2_qsys_0 --dir=C:/Users/Alec/AppData/Local/Temp/alt6526_8945190734574319275.dir/0001_nios2_qsys_0_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --verilog --config=C:/Users/Alec/AppData/Local/Temp/alt6526_8945190734574319275.dir/0001_nios2_qsys_0_gen//top_level_nios2_qsys_0_processor_configuration.pl  --do_build_sim=0    --bogus  ]
+Info: nios2_qsys_0: # 2015.04.01 15:30:09 (*) Starting Nios II generation
+Info: nios2_qsys_0: # 2015.04.01 15:30:09 (*)   Checking for plaintext license.
+Info: nios2_qsys_0: # 2015.04.01 15:30:11 (*)   Couldn't query license setup in Quartus directory C:/altera/13.0sp1/quartus
+Info: nios2_qsys_0: # 2015.04.01 15:30:11 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+Info: nios2_qsys_0: # 2015.04.01 15:30:11 (*)   LM_LICENSE_FILE environment variable is empty
+Info: nios2_qsys_0: # 2015.04.01 15:30:11 (*)   Plaintext license not found.
+Info: nios2_qsys_0: # 2015.04.01 15:30:11 (*)   Checking for encrypted license (non-evaluation).
+Info: nios2_qsys_0: # 2015.04.01 15:30:12 (*)   Couldn't query license setup in Quartus directory C:/altera/13.0sp1/quartus
+Info: nios2_qsys_0: # 2015.04.01 15:30:12 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+Info: nios2_qsys_0: # 2015.04.01 15:30:12 (*)   LM_LICENSE_FILE environment variable is empty
+Info: nios2_qsys_0: # 2015.04.01 15:30:12 (*)   Encrypted license not found.  Defaulting to OCP evaluation license (produces a time-limited SOF)
+Info: nios2_qsys_0: # 2015.04.01 15:30:12 (*)   Elaborating CPU configuration settings
+Info: nios2_qsys_0: # 2015.04.01 15:30:12 (*)   Creating all objects for CPU
+Info: nios2_qsys_0: # 2015.04.01 15:30:12 (*)     Testbench
+Info: nios2_qsys_0: # 2015.04.01 15:30:13 (*)     Instruction decoding
+Info: nios2_qsys_0: # 2015.04.01 15:30:13 (*)       Instruction fields
+Info: nios2_qsys_0: # 2015.04.01 15:30:13 (*)       Instruction decodes
+Info: nios2_qsys_0: # 2015.04.01 15:30:14 (*)       Signals for RTL simulation waveforms
+Info: nios2_qsys_0: # 2015.04.01 15:30:14 (*)       Instruction controls
+Info: nios2_qsys_0: # 2015.04.01 15:30:14 (*)     Pipeline frontend
+Info: nios2_qsys_0: # 2015.04.01 15:30:14 (*)     Pipeline backend
+Info: nios2_qsys_0: # 2015.04.01 15:30:19 (*)   Generating RTL from CPU objects
+Info: nios2_qsys_0: # 2015.04.01 15:30:25 (*)   Creating encrypted RTL
+Info: nios2_qsys_0: # 2015.04.01 15:30:27 (*) Done Nios II generation
+Info: nios2_qsys_0: Done RTL generation for module 'top_level_nios2_qsys_0'
+Info: nios2_qsys_0: "top_level" instantiated altera_nios2_qsys "nios2_qsys_0"
+Info: jtag_uart_0: Starting RTL generation for module 'top_level_jtag_uart_0'
+Info: jtag_uart_0:   Generation command is [exec C:/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=top_level_jtag_uart_0 --dir=C:/Users/Alec/AppData/Local/Temp/alt6526_8945190734574319275.dir/0002_jtag_uart_0_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --verilog --config=C:/Users/Alec/AppData/Local/Temp/alt6526_8945190734574319275.dir/0002_jtag_uart_0_gen//top_level_jtag_uart_0_component_configuration.pl  --do_build_sim=0  ]
+Info: jtag_uart_0: Done RTL generation for module 'top_level_jtag_uart_0'
+Info: jtag_uart_0: "top_level" instantiated altera_avalon_jtag_uart "jtag_uart_0"
+Info: clocks: Starting Generation of Required Clocks for DE-Series Boards
+Info: clocks: "top_level" instantiated altera_up_clocks "clocks"
+Info: SDRAM: Starting RTL generation for module 'top_level_SDRAM'
+Info: SDRAM:   Generation command is [exec C:/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller -- C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller/generate_rtl.pl --name=top_level_SDRAM --dir=C:/Users/Alec/AppData/Local/Temp/alt6526_8945190734574319275.dir/0004_SDRAM_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --verilog --config=C:/Users/Alec/AppData/Local/Temp/alt6526_8945190734574319275.dir/0004_SDRAM_gen//top_level_SDRAM_component_configuration.pl  --do_build_sim=0  ]
+Info: SDRAM: Done RTL generation for module 'top_level_SDRAM'
+Info: SDRAM: "top_level" instantiated altera_avalon_new_sdram_controller "SDRAM"
+Info: audio_and_video_config_0: Starting Generation of Audio and Video Config
+Info: audio_and_video_config_0: "top_level" instantiated altera_up_avalon_audio_and_video_config "audio_and_video_config_0"
+Info: video_decoder_0: Starting Generation of Video In Decoder
+Info: video_decoder_0: "top_level" instantiated altera_up_avalon_video_decoder "video_decoder_0"
+Info: Chroma_Resampler: Starting Generation of Chroma Resampler
+Info: Chroma_Resampler: "top_level" instantiated altera_up_avalon_video_chroma_resampler "Chroma_Resampler"
+Info: Colour_Space_Converter: Starting Generation of Colour Space Converter
+Info: Colour_Space_Converter: "top_level" instantiated altera_up_avalon_video_csc "Colour_Space_Converter"
+Info: RGB_Resampler: Starting Generation of Video RGB Resampler
+Info: RGB_Resampler: "top_level" instantiated altera_up_avalon_video_rgb_resampler "RGB_Resampler"
+Info: Video_Clipper: Starting generation of the video clipper
+Info: Video_Clipper: "top_level" instantiated altera_up_avalon_video_clipper "Video_Clipper"
+Info: Video_Scaler: Starting Generation of Video Scaler
+Info: Video_Scaler: "top_level" instantiated altera_up_avalon_video_scaler "Video_Scaler"
+Info: DMA_Controller: Starting Generation of Video DMA Controller
+Info: DMA_Controller: "top_level" instantiated altera_up_avalon_video_dma_controller "DMA_Controller"
+Info: Pixel_Buffer: Starting Generation of SRAM or SSRAM Controller
+Info: Pixel_Buffer: "top_level" instantiated altera_up_avalon_sram "Pixel_Buffer"
+Info: video_pixel_buffer_dma_0: Starting Generation of VGA Pixel Buffer
+Info: video_pixel_buffer_dma_0: "top_level" instantiated altera_up_avalon_video_pixel_buffer_dma "video_pixel_buffer_dma_0"
+Info: RGB_Resampler_0: Starting Generation of Video RGB Resampler
+Info: RGB_Resampler_0: "top_level" instantiated altera_up_avalon_video_rgb_resampler "RGB_Resampler_0"
+Info: Pixel_Scaler: Starting Generation of Video Scaler
+Info: Pixel_Scaler: "top_level" instantiated altera_up_avalon_video_scaler "Pixel_Scaler"
+Info: Reusing file C:/Users/Alec/Documents/GitHub/Home-Security/DE2/top_level/synthesis/submodules/altera_up_video_scaler_shrink.v
+Info: Reusing file C:/Users/Alec/Documents/GitHub/Home-Security/DE2/top_level/synthesis/submodules/altera_up_video_scaler_multiply_width.v
+Info: Reusing file C:/Users/Alec/Documents/GitHub/Home-Security/DE2/top_level/synthesis/submodules/altera_up_video_scaler_multiply_height.v
+Info: Dual_Clock_FIFO: Starting Generation of the Dual Clock Buffer
+Info: Dual_Clock_FIFO: "top_level" instantiated altera_up_avalon_video_dual_clock_buffer "Dual_Clock_FIFO"
+Info: VGA_Controller: Starting Generation of VGA Controller
+Info: VGA_Controller: "top_level" instantiated altera_up_avalon_video_vga_controller "VGA_Controller"
+Info: Frame_Save_DMA: Starting RTL generation for module 'top_level_Frame_Save_DMA'
+Info: Frame_Save_DMA:   Generation command is [exec C:/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_dma -- C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_dma/generate_rtl.pl --name=top_level_Frame_Save_DMA --dir=C:/Users/Alec/AppData/Local/Temp/alt6526_8945190734574319275.dir/0019_Frame_Save_DMA_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --verilog --config=C:/Users/Alec/AppData/Local/Temp/alt6526_8945190734574319275.dir/0019_Frame_Save_DMA_gen//top_level_Frame_Save_DMA_component_configuration.pl  --do_build_sim=0  ]
+Info: Frame_Save_DMA: # 2015.04.01 15:30:31 (*)   top_level_Frame_Save_DMA: allowing these transactions: hw, byte_access
+Info: Frame_Save_DMA: Done RTL generation for module 'top_level_Frame_Save_DMA'
+Info: Frame_Save_DMA: "top_level" instantiated altera_avalon_dma "Frame_Save_DMA"
+Info: Button_3: Starting RTL generation for module 'top_level_Button_3'
+Info: Button_3:   Generation command is [exec C:/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=top_level_Button_3 --dir=C:/Users/Alec/AppData/Local/Temp/alt6526_8945190734574319275.dir/0020_Button_3_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --verilog --config=C:/Users/Alec/AppData/Local/Temp/alt6526_8945190734574319275.dir/0020_Button_3_gen//top_level_Button_3_component_configuration.pl  --do_build_sim=0  ]
+Info: Button_3: Done RTL generation for module 'top_level_Button_3'
+Info: Button_3: "top_level" instantiated altera_avalon_pio "Button_3"
+Info: p_data: Starting RTL generation for module 'top_level_p_data'
+Info: p_data:   Generation command is [exec C:/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=top_level_p_data --dir=C:/Users/Alec/AppData/Local/Temp/alt6526_8945190734574319275.dir/0021_p_data_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --verilog --config=C:/Users/Alec/AppData/Local/Temp/alt6526_8945190734574319275.dir/0021_p_data_gen//top_level_p_data_component_configuration.pl  --do_build_sim=0  ]
+Info: p_data: Done RTL generation for module 'top_level_p_data'
+Info: p_data: "top_level" instantiated altera_avalon_pio "p_data"
+Info: p_input: Starting RTL generation for module 'top_level_p_input'
+Info: p_input:   Generation command is [exec C:/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=top_level_p_input --dir=C:/Users/Alec/AppData/Local/Temp/alt6526_8945190734574319275.dir/0022_p_input_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --verilog --config=C:/Users/Alec/AppData/Local/Temp/alt6526_8945190734574319275.dir/0022_p_input_gen//top_level_p_input_component_configuration.pl  --do_build_sim=0  ]
+Info: p_input: Done RTL generation for module 'top_level_p_input'
+Info: p_input: "top_level" instantiated altera_avalon_pio "p_input"
+Info: p_signal: Starting RTL generation for module 'top_level_p_signal'
+Info: p_signal:   Generation command is [exec C:/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=top_level_p_signal --dir=C:/Users/Alec/AppData/Local/Temp/alt6526_8945190734574319275.dir/0023_p_signal_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --verilog --config=C:/Users/Alec/AppData/Local/Temp/alt6526_8945190734574319275.dir/0023_p_signal_gen//top_level_p_signal_component_configuration.pl  --do_build_sim=0  ]
+Info: p_signal: Done RTL generation for module 'top_level_p_signal'
+Info: p_signal: "top_level" instantiated altera_avalon_pio "p_signal"
+Info: nios2_qsys_0_instruction_master_translator: "top_level" instantiated altera_merlin_master_translator "nios2_qsys_0_instruction_master_translator"
+Info: nios2_qsys_0_jtag_debug_module_translator: "top_level" instantiated altera_merlin_slave_translator "nios2_qsys_0_jtag_debug_module_translator"
+Info: nios2_qsys_0_instruction_master_translator_avalon_universal_master_0_agent: "top_level" instantiated altera_merlin_master_agent "nios2_qsys_0_instruction_master_translator_avalon_universal_master_0_agent"
+Info: nios2_qsys_0_jtag_debug_module_translator_avalon_universal_slave_0_agent: "top_level" instantiated altera_merlin_slave_agent "nios2_qsys_0_jtag_debug_module_translator_avalon_universal_slave_0_agent"
+Info: nios2_qsys_0_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo: "top_level" instantiated altera_avalon_sc_fifo "nios2_qsys_0_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo"
+Info: addr_router: "top_level" instantiated altera_merlin_router "addr_router"
+Info: addr_router_001: "top_level" instantiated altera_merlin_router "addr_router_001"
+Info: addr_router_002: "top_level" instantiated altera_merlin_router "addr_router_002"
+Info: addr_router_005: "top_level" instantiated altera_merlin_router "addr_router_005"
+Info: id_router: "top_level" instantiated altera_merlin_router "id_router"
+Info: id_router_001: "top_level" instantiated altera_merlin_router "id_router_001"
+Info: id_router_002: "top_level" instantiated altera_merlin_router "id_router_002"
+Info: id_router_005: "top_level" instantiated altera_merlin_router "id_router_005"
+Info: limiter: "top_level" instantiated altera_merlin_traffic_limiter "limiter"
+Info: burst_adapter: "top_level" instantiated altera_merlin_burst_adapter "burst_adapter"
+Info: rst_controller: "top_level" instantiated altera_reset_controller "rst_controller"
+Info: cmd_xbar_demux: "top_level" instantiated altera_merlin_demultiplexer "cmd_xbar_demux"
+Info: cmd_xbar_demux_001: "top_level" instantiated altera_merlin_demultiplexer "cmd_xbar_demux_001"
+Info: cmd_xbar_demux_002: "top_level" instantiated altera_merlin_demultiplexer "cmd_xbar_demux_002"
+Info: cmd_xbar_mux: "top_level" instantiated altera_merlin_multiplexer "cmd_xbar_mux"
+Info: cmd_xbar_mux_001: "top_level" instantiated altera_merlin_multiplexer "cmd_xbar_mux_001"
+Info: Reusing file C:/Users/Alec/Documents/GitHub/Home-Security/DE2/top_level/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: cmd_xbar_mux_005: "top_level" instantiated altera_merlin_multiplexer "cmd_xbar_mux_005"
+Info: Reusing file C:/Users/Alec/Documents/GitHub/Home-Security/DE2/top_level/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_xbar_demux: "top_level" instantiated altera_merlin_demultiplexer "rsp_xbar_demux"
+Info: rsp_xbar_demux_001: "top_level" instantiated altera_merlin_demultiplexer "rsp_xbar_demux_001"
+Info: rsp_xbar_demux_002: "top_level" instantiated altera_merlin_demultiplexer "rsp_xbar_demux_002"
+Info: rsp_xbar_demux_005: "top_level" instantiated altera_merlin_demultiplexer "rsp_xbar_demux_005"
+Info: rsp_xbar_mux: "top_level" instantiated altera_merlin_multiplexer "rsp_xbar_mux"
+Info: Reusing file C:/Users/Alec/Documents/GitHub/Home-Security/DE2/top_level/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_xbar_mux_001: "top_level" instantiated altera_merlin_multiplexer "rsp_xbar_mux_001"
+Info: Reusing file C:/Users/Alec/Documents/GitHub/Home-Security/DE2/top_level/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: width_adapter: "top_level" instantiated altera_merlin_width_adapter "width_adapter"
+Info: Reusing file C:/Users/Alec/Documents/GitHub/Home-Security/DE2/top_level/synthesis/submodules/altera_merlin_address_alignment.sv
+Info: Reusing file C:/Users/Alec/Documents/GitHub/Home-Security/DE2/top_level/synthesis/submodules/altera_merlin_burst_uncompressor.sv
+Info: irq_mapper: "top_level" instantiated altera_irq_mapper "irq_mapper"
+Info: top_level: Done top_level" with 54 modules, 205 files, 4040953 bytes
+Info: ip-generate succeeded.
+Info: Finished: Create HDL design files for synthesis
