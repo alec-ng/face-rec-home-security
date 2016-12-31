@@ -1,11 +1,11 @@
 #Facial Recognition Home Security System
 
-Alec Ng, (David Henderson)[https://github.com/orgs/EECE-381/people/D-H], (Daniel Sallaway)[https://github.com/dansall], (Anna Gudimova)[https://github.com/Anna-Gudimova]
+Alec Ng, [David Henderson](https://github.com/orgs/EECE-381/people/D-H), [Daniel Sallaway](https://github.com/dansall), [Anna Gudimova](https://github.com/Anna-Gudimova)
 
 Overview
 ---
 
-(Demo 1)[https://www.youtube.com/watch?v=Ze3dJgEQsDE] and (Demo 2)[https://www.youtube.com/watch?v=S9FLD0_HgnQ]
+[Demo 1](https://www.youtube.com/watch?v=Ze3dJgEQsDE) and [Demo 2](https://www.youtube.com/watch?v=S9FLD0_HgnQ)
 
 This project mimics a home security system that has a two step authentication process. Each user is represented by a unique 4 digit PIN code, which is first entered in a matrix keypad. Then, the user takes a picture through a webcam attached to an Altera DE-2 FPGA, which then is sent to a Raspberry Pi for face recognition logic. If the picture matches the person the ID entered represents, a servo is activated to represent unlocking of a lock.
 
@@ -42,7 +42,7 @@ Languages:
 - C
 
 Libraries:
-- OpenCV ((installation guide)[https://alecng94.github.io/tech/Installing-OpenCV-Linux-Dist/])
+- OpenCV ([installation guide](https://alecng94.github.io/tech/Installing-OpenCV-Linux-Dist/))
 - Twilio
 
 Other:
